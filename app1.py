@@ -14,7 +14,7 @@ def get_base64_of_bin_file(bin_file):
     return base64.b64encode(data).decode()
 
 # Load your saved Keras model
-model_path = r"C:\Users\sansk\Desktop\New folder\terrain_classifier_eurosat.keras"  # Update this path
+model_path = r"terrain_classifier_eurosat.keras"  # Update this path
 try:
     model = load_model(model_path)
     st.success(f"Model loaded successfully from {model_path}")
